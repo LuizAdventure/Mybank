@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyBank</string>
+    <string name="resumo_das_faturas">Resumo das Faturas</string>
+    <string name="data_de_vencimento_25_03_2021">Data de Vencimento: 25/03/2021</string>
+    <string name="saldo_parcial_r_500_00">Saldo Parcial: R$500,00</string>
+    <string name="pagar_a_fatura">Pagar a Fatura</string>
+    <string name="valor_total">Valor total</string>
+    <string name="r_5_000_00">R$5.000,00</string>
+    <string name="saldo_dispon_vel">Saldo Disponível</string>
+    <string name="r_1_500_00">R$ 1.500,00</string>
+    <string name="transfer_ncia">Transferência</string>
+    <string name="para">Para:</string>
+    <string name="valor">Valor:</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="label_show_success">Transferencia com sucesso</string>
+    <string name="label_share">Compartilhar</string>
+    <string name="transferencias">Transferencias</string>
+
+
+</resources>
