@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.luizalberto.transf.R
 
 import com.luizalberto.transf.data.Transf
 import com.luizalberto.transf.databinding.ItemtransferenciaBinding
@@ -42,8 +43,6 @@ class TransferenciaAdapter :
             }
         }
     }
-
-
 
 }
 

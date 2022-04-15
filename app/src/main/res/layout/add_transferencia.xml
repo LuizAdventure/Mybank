@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.AddTransferencia">
+    tools:context=".ui.AddCardActivity">
+
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_transferencia"
@@ -28,6 +30,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar_transferencia"/>
@@ -35,7 +38,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_margin="16dp"
         android:hint="@string/para"
-        android:id="@+id/para"
+        android:id="@+id/til_para"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,20 +55,20 @@
 </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/valor"
+        android:id="@+id/til_valor"
         android:layout_margin="16dp"
         android:hint="@string/valor"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/para"
+        app:layout_constraintTop_toBottomOf="@id/til_para"
         android:layout_width="0dp"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>

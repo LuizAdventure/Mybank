@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.Poupanca">
+    tools:context=".menu.Poupanca">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_popanca"
@@ -19,7 +19,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/text_valor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar_popanca"/>
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tv_valor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -42,7 +42,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView5"/>
+        app:layout_constraintTop_toBottomOf="@id/text_valor"/>
 
 
 

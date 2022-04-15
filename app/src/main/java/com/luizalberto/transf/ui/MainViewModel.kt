@@ -10,7 +10,7 @@ import java.lang.IllegalArgumentException
 class MainViewModel(private val transfRepositorio: TransfRepositorio): ViewModel(){
 
     fun insert(transf: Transf){
-        transfRepositorio.insert(transf  )
+        transfRepositorio.insert(transf)
 
     }
     fun getAll() : LiveData<List<Transf>> {
@@ -19,12 +19,3 @@ class MainViewModel(private val transfRepositorio: TransfRepositorio): ViewModel
     }
 }
 
-class MainViewModelFactory(private val repositorio: TransfRepositorio): ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
-            @Suppress("UNCHECKED_CAST")
-            return MainViewModel(repositorio) as T
-        }
-        throw IllegalArgumentException("Unknown ViewModel class")
-    }
-}

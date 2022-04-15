@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import com.luizalberto.transf.databinding.ActivityMainBinding
-
+import com.luizalberto.transf.menu.Faturas
+import com.luizalberto.transf.menu.Poupanca
+import com.luizalberto.transf.menu.Saldo
 
 
 class MainActivity : AppCompatActivity() {
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.transferencia.setOnClickListener{
-            val intent = Intent(this, MainTransferencia::class.java)
+            val intent = Intent(this, Transferencia::class.java)
             startActivity(intent)
             finish()
         }

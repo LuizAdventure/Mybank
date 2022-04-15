@@ -7,6 +7,6 @@ import com.luizalberto.transf.data.TransfRepositorio
 
 
 class App : Application() {
-    private val database by lazy { AppDatabase.getDatabase(this) }
+    val database by lazy { AppDatabase.getDatabase(this) }
     val repositorio by lazy { TransfRepositorio (database.transferenciaDao()) }
 }

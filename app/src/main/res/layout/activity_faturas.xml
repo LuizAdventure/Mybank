@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.Faturas">
+    tools:context=".menu.Faturas">
 
 
 
@@ -20,7 +20,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/titulo_resumo_fatura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar_faturas"/>
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/text_vencimento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -44,10 +44,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView7"/>
+        app:layout_constraintTop_toBottomOf="@id/titulo_resumo_fatura"/>
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/text_valor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -57,7 +57,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView8"/>
+        app:layout_constraintTop_toBottomOf="@id/text_vencimento"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button"
